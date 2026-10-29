@@ -1,0 +1,15 @@
+{
+  "name": "codex-deepseek-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "login": "node src/login.mjs",
+    "start": "node src/server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "playwright-core": "^1.54.2"
+  },
+  "devDependencies": {}
+}
