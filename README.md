@@ -68,7 +68,7 @@ node_modules/
 _refs/
 ```
 
-`.deepseek-auth/credentials.json` 里包含 DeepSeek Web 的 cookie 和 bearer，泄露后等同于泄露登录态。
+项目根目录中`.deepseek-auth/credentials.json` 里包含 DeepSeek Web 的 cookie 和 bearer，泄露后等同于泄露登录态。
 
 ## 登录 DeepSeek
 
@@ -76,7 +76,7 @@ _refs/
 npm run login
 ```
 
-脚本会打开浏览器。登录 `chat.deepseek.com` 后，凭证会保存到：
+脚本会打开浏览器。登录 `chat.deepseek.com` 后，凭证会保存到项目根目录下：
 
 ```text
 .deepseek-auth/credentials.json
@@ -115,6 +115,16 @@ deepseek-web/deepseek-reasoner
 
 ## Codex 配置
 
+### 通过 Cc Switch 配置（推荐）
+- 图标展示-1
+![本地图片](./codex1.png)
+- 图标展示-2
+![本地图片](./codex2.png)
+- codex 自动生成的toml配置: [config.toml](./codex.toml)。
+
+
+
+### 通过 toml  配置
 ```toml
 model_provider = "deepseek"
 model = "deepseek-web/deepseek-chat"
@@ -127,7 +137,7 @@ requires_openai_auth = true
 api_key = "deepseek"
 ```
 
-改完配置后，建议重新打开一个 Codex 会话。
+<span style="color:red">改完配置后，建议重新打开一个 Codex 会话。</span>
 
 ## 本地测试
 
@@ -165,14 +175,3 @@ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8787/v1/responses -ContentT
 - Codex 的 Responses 兼容配置
 - OpenAI Chat Completions 兼容工具调用
 
-第三方组件和在线服务分别适用它们自己的许可证和服务条款。
-
-## 友情链接
-
-- [LINUX DO 社区](https://linux.do)
-
-## 许可证
-
-本项目使用自定义非商业许可证。允许个人学习、研究和非商业使用；禁止未经授权的商业用途；不提供任何担保，作者不承担使用风险。
-
-详见 [LICENSE](./LICENSE)。

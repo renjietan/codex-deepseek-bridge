@@ -1,0 +1,160 @@
+model_provider = "custom"
+model = "deepseek-web/deepseek-chat"
+model_catalog_json = "cc-switch-model-catalog.json"
+model_reasoning_effort = "high"
+disable_response_storage = true
+notify = [ "C:\\Users\\Cc\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\1fb7137c46617d50\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
+[model_providers.custom]
+name = "deepseek"
+base_url = "http://127.0.0.1:8787"
+wire_api = "responses"
+requires_openai_auth = true
+[projects.'d:\work\flutter\template\3-38-10\flutter_kts_template']
+trust_level = "trusted"
+
+[projects.'d:\work\flutter\template\3-38-10\cpds-main']
+trust_level = "trusted"
+
+[projects.'d:\work\flutter\template\3-38-10\cpdc-main']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-10\you']
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 1
+
+[windows]
+sandbox = "elevated"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = '\\?\C:\Users\Cc\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = '\\?\C:\Users\Cc\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[desktop]
+followUpQueueMode = "queue"
+appearanceTheme = "system"
+defaultTerminalLocation = "bottom"
+localeOverride = "zh-CN"
+
+[desktop.appearanceLightChromeTheme]
+accent = "#339cff"
+contrast = 45
+ink = "#1a1c1f"
+opaqueWindows = false
+surface = "#ffffff"
+
+[desktop.appearanceLightChromeTheme.fonts]
+
+[desktop.appearanceLightChromeTheme.semanticColors]
+diffAdded = "#00a240"
+diffRemoved = "#ba2623"
+skill = "#924ff7"
+
+[desktop.open-in-target-preferences]
+global = "vscode"
+
+[desktop.open-in-target-preferences.perPath]
+'D:\work\flutter\template\3-38-10\flutter_kts_template' = "vscode"
+
+[features]
+js_repl = false
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7e278296881e246288158627d6f66ac980dc372f751e1b3f2b6e14e9e7593966"
+
+[mcp_servers]
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\Cc\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_repl.exe'
+env_vars = ["BROWSER_USE_ACCESS_EXECUTOR_ID", "BROWSER_USE_ACCESS_PIPE_PATH", "BROWSER_USE_ACCESS_VERIFYING_IDENTITY", "CODEX_WINDOWS_REGISTERED_CORE"]
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\Cc\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\Cc\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\Cc\.codex;C:\Users\Cc\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_modules'
+CODEX_HOME = 'C:\Users\Cc\.codex'
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab,mcpapps"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.1021.31345"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"C:/Users/Cc/.codex/plugins/cache/openai-bundled/browser/26.1021.31345/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-fe7714d0-6543-4a6d-a658-5eb85aa73119'
+CODEX_CLI_PATH = 'C:\Users\Cc\AppData\Local\OpenAI\Codex\bin\2993767bd1dfb009\codex.exe'
+NODE_REPL_UNTRUSTED_ENV_ALLOWLIST = "CODEX_WINDOWS_REGISTERED_CORE"
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
+
+[projects.'d:\work\flutter\template\3-38-10\cpds-old\cpds-old']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-10\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-17\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\chatgpt\new project']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-17\new-chat-2']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-17\new-chat-3']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-17\new-chat-4']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-18\w']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-09-19\shell-exec-command-helper-unknown-error']
+trust_level = "trusted"
+
+[projects.'c:\users\cc\documents\codex\2026-10-09\new-chat']
+trust_level = "trusted"
+
+[hooks.state]
